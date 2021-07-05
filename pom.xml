@@ -18,7 +18,7 @@
         <protobuf.version>3.12.0</protobuf.version>
         <grpc.version>1.30.0</grpc.version>
         <armeria.version>1.4.0</armeria.version>
-        <micrometer.version>1.5.1</micrometer.version>
+        <micrometer.version>1.7.0</micrometer.version>
         <jackson.version>2.11.1</jackson.version>
         <lucene.version>8.4.1</lucene.version>
         <curator.version>5.1.0</curator.version>
@@ -422,8 +422,7 @@
                         <configuration>
                             <finalName>${uberjar.name}</finalName>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
                                         <Main-Class>com.slack.kaldb.server.Kaldb</Main-Class>
                                     </manifestEntries>
